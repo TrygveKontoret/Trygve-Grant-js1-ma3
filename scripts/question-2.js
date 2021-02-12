@@ -14,11 +14,11 @@ game = (spill) => {
         if(spel === spill.results[8]){
             break
         };
-        let nySpill = `<div>
-        <h2>${spel.name}</h2>
-        <p>Rating: ${spel.rating}</p>
-        <p>${spel.tags}</p>
-        </div>`;
+        let nySpill = `<ul>
+        <li><h2>${spel.name}</h2></li>
+        <li>Rating: ${spel.rating}</li>
+        <li>Number of tags: ${spel.tags.length}</li>
+        </ul>`;
         out.innerHTML += nySpill;
     }
 };
