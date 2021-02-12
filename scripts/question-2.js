@@ -13,7 +13,7 @@ game = (spill) => {
     for (spel of spill.results) {
         if(spel === spill.results[8]){
             break
-        }
+        };
         let nySpill = `<div>
         <h2>${spel.name}</h2>
         <p>Rating: ${spel.rating}</p>
